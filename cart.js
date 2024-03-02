@@ -118,6 +118,11 @@ checkoutButton.addEventListener("click", function () {
  if (cartItem.length >= 1) {
     // Select the modal element
     const modal = document.getElementById("successModal");
+
+    // clear local storage and update cart notification
+    localStorage.clear();
+    updateCartNotification(0);
+    
     // Display the modal
     modal.style.display = "block";
  } else {
