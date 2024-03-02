@@ -1,1 +1,853 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+header {
+  background: #fff;
+  color: #222;
+  padding: 0.5rem 0;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav-container > .logo {
+  font-size: 22px;
+  font-weight: 700;
+}
+.nav-container > .logo > a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #f8a44e;
+}
+
+nav {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  background-color: #fff;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+}
+
+nav > .nav-links {
+  display: flex;
+  gap: 2rem;
+  margin: 0 auto;
+}
+nav > .btns {
+  display: flex;
+  gap: 1.6rem;
+  font-size: 1.2rem;
+}
+nav > .nav-links > li a:hover {
+  color: #f8a44e;
+}
+.active {
+  color: #f8a44e;
+}
+/* nav > .nav-links > li a.active {
+  color: #f8a44e;
+} */
+
+/* button{
+  background: linear-gradient(180deg, #f8a44e 0%, #c96805 100%);
+  border-radius: 15px;
+  padding:  8px;
+  font-size: 16px;
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+  height: 1.6rem;
+  transition: all .5s ease;
+}
+
+button:hover{
+  background: transparent; 
+  border:2px solid #f8a44e;
+  color: #f8a44e;
+} */
+
+nav > .btns > a > .order {
+  background: linear-gradient(180deg, #f8a44e 0%, #c96805 100%);
+  border-radius: 15px;
+  padding: 0 8px;
+  font-size: 16px;
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+  height: 1.6rem;
+  transition: all 0.5s ease;
+}
+nav > .btns > a > .order:hover {
+  background: transparent;
+  border: 2px solid #f8a44e;
+  color: #f8a44e;
+}
+
+nav > .btns > .cart-notification {
+  position: relative;
+  top: 0;
+  right: 40px;
+  background-color: forestgreen;
+  color: aliceblue;
+  font-size: 12px;
+  border-radius: 50%;
+  text-align: center;
+  padding: 2px 6px;
+  width: 20px;
+  height: 20px;
+}
+
+.nav-container > .hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+.nav-container > .close-menu {
+  display: none;
+  cursor: pointer;
+}
+
+/* Reservation Form */
+.reservation-form > h1 {
+  padding-left: 3rem;
+  padding-top: 2rem;
+  color: #f8a44e;
+}
+
+.reservation-form > img {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#reservation-form {
+  padding: 0 9rem;
+}
+
+#reservation-form > label,
+.form-container > div > label {
+  font-weight: 700;
+  font-size: larger;
+  width: 100%;
+}
+
+.form-container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2rem;
+  margin-bottom: 20px;
+}
+
+.form-container > div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 0.6rem;
+  position: relative;
+}
+
+#reservation-form div span {
+  position: absolute;
+  /* padding: 10px; */
+  right: 0;
+  top: 60%;
+  transform: translateY(-50%);
+}
+
+.form-container > div > input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 2px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 18px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-container > div > input:focus,
+.form-container > div > textarea:focus {
+  outline: 0;
+}
+
+.form-container > .error {
+  font-size: 12px;
+  margin-top: 2px;
+  height: 13px;
+  color: #ec5c5c;
+}
+  .form-container > .success input {
+    border-color: #09c372;
+  }
+
+  .input-control > input::placeholder,
+  .input-control > textarea::placeholder {
+    color: #dad6d6;
+    font-style: italic;
+  }
+
+  #reservation-form > label > .Optional {
+    font-size: 16px;
+    color: #818080;
+  }
+
+  #reservation-form > textarea {
+    width: 100%;
+    margin: 8px 0;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    resize: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  #reservation-form > .form-container {
+    margin-bottom: 5px;
+  }
+
+  #reservation-form > .reserve-button {
+    display: block;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #f8a44e 0%, #c96805 100%);
+    border-radius: 5px;
+    padding: 8px;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Added to app script on the google form */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(209, 208, 208, 0.6); /* Black w/ opacity */
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10rem auto;
+    padding: 3rem;
+    border: 1px solid #888;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+  /* The Close Button */
+  #closeModal {
+    background: linear-gradient(180deg, #f8a44e 0%, #c96805 100%);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 16px;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 5px;
+    text-align: center;
+    height: 1.6rem;
+    padding-bottom: 8px;
+    transition: all .5s ease;
+}
+
+  #closeModal:hover,
+  #closeModal:focus {
+    background: transparent; 
+  border:2px solid #f8a44e;
+  color: #f8a44e;
+  }
+
+  /* End of reservation form */
+
+  /* Order now page */
+  .menu-container {
+    position: relative;
+    background-color: #fafafa;
+    width: 100%;
+    max-width: fit-content;
+    margin: 0 auto;
+  }
+
+  .order-name {
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+    color: #f8a44e;
+  }
+
+  /* .search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+  width: 20%;
+  max-width: 400px;
+  border: 2px solid #888;
+  border-radius: 15px;
+  padding-left: 1rem;
+  margin-right: 15px;
+  /* position: absolute;
+  right: 0; */
+  /* z-index: 1;
+}
+
+.search-input {
+  flex-grow: 1;
+  border: 0;
+  background: transparent;
+  color: #333;
+  font-size: 17px;
+  padding:  5px;
+}
+
+.search-container > button {
+  outline: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  padding:  5px;
+} */
+
+  .search-container {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    width: 100%;
+    max-width: 250px;
+    border: 2px solid #888;
+    border-radius: 15px;
+    padding-left: 1rem;
+    margin-right: 15px;
+    margin-left: 1rem;
+    z-index: 1;
+  }
+
+  .search-input {
+    flex-grow: 1;
+    border: 0;
+    background: transparent;
+    color: #333;
+    font-size: 17px;
+    padding: 8px; /* Add padding for better touch target size */
+    margin-right: -80px; /* Adjust the margin to align the button with the input */
+  }
+
+  .search-container > button {
+    outline: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    padding: 10px; /* Add padding for better touch target size */
+    margin-left: -15px; /* Adjust the margin to align the button with the input */
+  }
+
+  .search-container > input::placeholder {
+    color: #e0e0e0;
+  }
+
+  .menu-container > .details {
+    margin: 0 auto;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .menu-container > .details > .details-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 15px;
+    width: 100%;
+    margin: auto;
+    height: auto;
+  }
+
+  .menu-container .details > .details-container img {
+    object-fit: cover;
+    filter: drop-shadow(0 0 20px #0009);
+    padding-left: 20px;
+    border-radius: 22px;
+    padding: 15px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .menu-container > .details > .details-container:nth-child(odd) {
+    background-color: #dad6d6;
+  }
+
+  .menu-container .details .details-container .key-details {
+    margin: 2rem 0;
+  }
+  .menu-container .details .details-container .item-name {
+    margin: 10px 0;
+    font-weight: 700;
+  }
+
+  .menu-container .details .details-container .ingredients {
+    margin: 10px 0;
+    text-align: justify;
+  }
+
+  .menu-container .details .details-container .information {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-right: 20px;
+    margin: 2rem 0;
+  }
+
+  .menu-container .details .details-container .add-to-cart {
+    outline: 0;
+    border: 0;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    color: #f8a44e;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.4s ease-in-out;
+    box-shadow: inset 0 -5px 0 #f8a44e;
+  }
+
+  .menu-container .details .details-container .add-to-cart:hover {
+    box-shadow: inset 0 -60px 0 #f8a44e, 2px 2px 3px rgba(0, 0, 0, 0.3);
+    color: #f8f8f8;
+  }
+
+  .button {
+    margin: 1.5rem 2.5rem 0 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    
+  }
+  
+  .btn {
+    color: white;
+    background-color: #f8a44e;
+    border: none;
+    border-radius: 3px;
+    padding: 0.4rem 1.5rem;
+    font-size: 1rem;
+    margin-top: -0.8rem;
+    cursor: pointer;
+  }
+  
+  
+  span {
+    font-size: 18px;
+  }
+
+  /* End of order now page */
+
+ 
+  /* cart page */
+  .cart {
+    margin: 0 3rem;
+  }
+  .cart > .cart-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .cart > .cart-header > h2 {
+    color: #f8a44e;
+    margin: 2rem;
+  }
+
+  .cart > .cart-header > a > .close-cart {
+    color: #f8a44e;
+    margin: 2rem;
+    cursor: pointer;
+  }
+
+  .cart > .cart-header > a > .close-cart:hover {
+    text-decoration: underline;
+  }
+
+  .cart > .cart-item {
+    margin: 0 4rem;
+  }
+
+  /* .cart > .cart-item > .item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem;
+  } */
+
+  .cart > .cart-item > .item {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 15px;
+    /* flex-direction: row; */
+    width: 100%;
+    /* max-width: 600px; */
+    margin: auto;
+    height: auto;
+    position: relative;
+
+  }
+
+  .cart > .cart-item > .item > img {
+    object-fit: cover;
+    filter: drop-shadow(0 0 20px #0009);
+    width: 200px;
+    height: 200px;
+    padding-left: 20px;
+    border-radius: 22px;
+    padding: 15px;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  .item > .close-menu-cart {
+    background-color: #969696;
+    padding: 5px;
+    border-radius: 50%;
+    color: #f8a44e;
+    font-size: 13px;
+    position: absolute;
+    top: 19px;
+    left: 90px;
+    /* transform: translateX(-50%); */
+    z-index: 1;
+    cursor: pointer;
+    display: flex; /* Use flexbox to center the icon */
+    align-items: center; /* Center the icon vertically */
+    justify-content: center; 
+  }
+
+  /* .item > img:hover, */
+  .item > .close-menu-cart:hover {
+    background-color: rgba(14, 13, 13, 0.5);
+  }
+
+  .item > .details {
+    margin: 0 3rem;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    margin: 0 10px;
+    flex-direction: column;
+  }
+  .item > .details > h3 {
+    text-wrap: no-wrap;
+    margin-bottom: 5px;
+  }
+  .item > .details > .amount {
+    margin-top: 5px;
+  }
+
+  .quantity {
+    padding-top: 10px;
+    margin: 0 10px;
+    max-width: 20%;
+  }
+  .quantity input {
+    border: 1px solid #f8a44e;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    width: 4rem;
+    font-size: 16px;
+    color: #43484d;
+    font-weight: 400;
+  }
+
+  .quantity button {
+    /* width: 30px;
+  height: 30px; */
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  .minus-btn span {
+    margin-bottom: 3px;
+  }
+  .plus-btn span {
+    margin-top: 2px;
+  }
+
+  div .total {
+    margin: 0 10.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 900;
+  }
+
+  div .checkout {
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 8px;
+    border-radius: 15px;
+    color: #fff;
+    background: linear-gradient(180deg, #f8a44e 0%, #c96805 100%);
+    border: 0;
+    outline: o;
+  }
+
+  div .checkout:hover {
+    background: transparent;
+    border: 2px solid #f8a44e;
+    color: #f8a44e;
+  }
+
+  button:focus,
+  input:focus {
+    outline: 0;
+  }
+
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.5rem 10rem;
+  }
+
+  footer > .social-icons a {
+    width: 50%;
+    background-color: rgba(248, 164, 78, 0.16);
+    border-radius: 50%;
+    margin: 5px;
+    padding: 8px;
+    cursor: pointer;
+  }
+  footer > .social-icons a:active {
+    width: 50%;
+    background-color: #f8a44e;
+    border-radius: 50%;
+    margin: 5px;
+    padding: 8px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .nav-container > .logo {
+      font-size: 1.2rem;
+      z-index: 2;
+    }
+
+    nav {
+      flex-direction: column;
+      gap: 2rem;
+      z-index: 1;
+    }
+
+    nav > .nav-links,
+    .btns {
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    nav > .btns > button {
+      background: linear-gradient(180deg, #f8a44e 0%, #c96805 100%);
+      border-radius: 10px;
+      padding: 5px;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    .nav-container > .hamburger-menu {
+      display: block;
+      z-index: 2;
+      border-radius: 50%;
+      border: 2px solid #f8a44e;
+      padding: 8px;
+      color: #f8a44e;
+    }
+    .nav-container > .close-menu {
+      display: none;
+      z-index: 2;
+      border-radius: 50%;
+      border: 2px solid #f8a44e;
+      padding: 8px;
+      color: #f8a44e;
+      cursor: pointer;
+      transition: 0.45s ease-in-out;
+    }
+
+    nav {
+      position: absolute;
+      top: 0;
+      right: -100%;
+      /* bottom: 0; */
+      width: 100%;
+      padding-top: 6rem;
+      padding-bottom: 35px;
+
+      align-items: center;
+      text-align: center;
+      background-color: #fff;
+      color: #222;
+
+      transition: 0.45s ease-in-out;
+    }
+
+    nav > .btns > .cart-notification {
+      position: relative;
+      top: -4rem;
+      left: 3.5rem;
+      background-color: forestgreen;
+      color: aliceblue;
+      font-size: 12px;
+      border-radius: 50%;
+      text-align: center;
+      padding: 2px 6px;
+      width: 20px;
+      height: 20px;
+    }
+
+    .nav.active {
+      right: 0;
+    }
+
+    form {
+      margin: 0 auto;
+      padding: 0 3rem;
+    }
+
+    #reservation-form {
+      padding: 25px;
+    }
+
+    .form-container {
+      display: grid;
+      grid-template-rows: repeat(6, 1fr);
+      grid-template-columns: 1fr;
+      grid-column-gap: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .search-input {
+      font-size: 14px; /* Adjust the font size for smaller screens */
+      padding: 8px; /* Adjust the padding for smaller screens */
+    }
+
+    .search-container > button {
+      padding: 8px; /* Adjust the padding for smaller screens */
+    }
+    .menu-container > .details {
+      padding: 0;
+    }
+
+    .menu-container > .details > .details-container {
+      padding: 0 20px;
+      flex-direction: column;
+    }
+
+    .menu-container .details > .details-container img {
+      margin-top: 20px;
+    }
+
+    .cart {
+      margin: 0;
+    }
+
+    .cart > .cart-item {
+      margin: 0 10px;
+      /* width: 100%; */
+    }
+
+    .cart-item > .item {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: column;
+    
+    }
+
+    .cart-item > .item > img {
+      max-width: 60%;
+      margin-right: 0.5rem;
+    }
+
+    .cart > .cart-item > .item > img{
+      max-width: 60%;
+      margin-right: 0.5rem;
+      width: 100px;
+      height: 100px;
+    }
+    div .quantity {
+      margin: 0 5px;
+    }
+
+    .cart-item > .item > .sub-total {
+      margin: 0 10px;
+   }
+  
+
+    div .total {
+      margin: 0 3rem;
+    }
+
+    .quantity input {
+      width: 2.5rem;
+      text-align: left;
+    }
+    
+    footer {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    footer p {
+      font-size: 12px;
+    }
+    footer > .social-icons {
+      margin-top: 18px;
+    }
+  }
 
