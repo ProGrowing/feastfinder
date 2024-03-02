@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1,
+    "image": "img/Ancient-grain-bowls.jpg",
+    "name": " Ancient Grain Bowl",
+    "ingredients": "miso sesame glazed sweet potato, turmeric, charred onion, snap pea, portobello, avocado, hemp seed, cilantro pumpkin seed pesto V",
+    "price": 250
+  },
+  {
+    "id": 2,
+    "image": "img/bourito-bowl.jpg",
+    "name": " Bourito Bowl",
+    "ingredients": "anasazi bean, brown rice, quinoa, cotija, avocado, peruvian peppersauce, charred scallion salsa verde GF",
+    "price": 750
+  },
+  {
+    "id": 3,
+    "image": "img/charred-cauliflower.jpg",
+    "name": " Charred Cauliflower",
+    "ingredients": "miso sesame glazed sweet potato, turmeric, charred onion, snap pea, portobello, avocado, hemp seed, cilantro pumpkin seed pesto V",
+    "price": 550
+  },
+  {
+    "id": 4,
+    "image": "img/chopped-salad.jpg",
+    "name": " Chopped Salad",
+    "ingredients": "medjool date, dried cranberry, jicama, organic apple, aged white cheddar, farro, marcona almond, champagne vinaigrette VEG",
+    "price": 950
+  },
+  {
+    "id": 5,
+    "image": "img/creamy-tomato-soup.jpg",
+    "name": " Creamy Tomato Soup",
+    "ingredients": "Topped with whipped parmesan and toasted sourdough breadcrumb VEG",
+    "price": 650
+  },
+  {
+    "id": 6,
+    "image": "img/edamame-dumplings.jpg",
+    "name": " Edamame Dumplings",
+    "ingredients": "Dashi, white truffle oil, herbs VEG",
+    "price": 250
+  },
+  {
+    "id": 7,
+    "image": "img/edamole-guacamole.jpg",
+    "name": " Edamole Guacamole",
+    "ingredients": " Avocado, cilantro, lime, Chef Matt’s Magical Dust, house-made baked tortilla chips V GF",
+    "price": 750
+  },
+  {
+    "id": 8,
+    "image": "img/herb-hummus.jpg",
+    "name": " Herb Hummus",
+    "ingredients": "Cucumber, cherry tomato, onion, olive, feta, lemon oregano vinaigrette, pita VEG",
+    "price": 250
+  },
+  {
+    "id": 9,
+    "image": "img/korean-noodle-bowl.jpg",
+    "name": " Korean Noodle Bowl",
+    "ingredients": "sweet potato glass noodle, pickled shiitake, organic spinach, carrot, bean sprout, Chef Matt’s Magical Dust V GF",
+    "price": 250
+  },
+  {
+    "id": 10,
+    "image": "img/quinoa-bowl.jpg",
+    "name": " Quinoa Bowl",
+    "ingredients": "Broccoli, rainbow carrots, bok choy, green bean, snap pea, pickled shiitake, brown rice, avocado, Chef Matt’s Magical Dust V GF",
+    "price": 250
+  },
+  {
+    "id": 11,
+    "image": "img/squash-soup.jpg",
+    "name": " Squash Soup",
+    "ingredients": "Butternut squash, sage V GF",
+    "price": 450
+  },
+  {
+    "id": 12,
+    "image": "img/BlueberryPancakes.jpg",
+    "name": " Blueberry Pancake",
+    "ingredients": "Blueberry compote, greek yogurt, maple syrup",
+    "price": 250
+  },
+  {
+    "id": 13,
+    "image": "img/Ancient-grain-bowls.jpg",
+    "name": " Ancient Grain Bowl",
+    "ingredients": "miso sesame glazed sweet potato, turmeric, charred onion, snap pea, portobello, avocado, hemp seed, cilantro pumpkin seed pesto V",
+    "price": 250
+  },
+  {
+    "id": 14,
+    "image": "img/bourito-bowl.jpg",
+    "name": " Bourito Bowl",
+    "ingredients": "anasazi bean, brown rice, quinoa, cotija, avocado, peruvian peppersauce, charred scallion salsa verde GF",
+    "price": 750
+  },
+  {
+    "id": 15,
+    "image": "img/charred-cauliflower.jpg",
+    "name": " Charred Cauliflower",
+    "ingredients": "miso sesame glazed sweet potato, turmeric, charred onion, snap pea, portobello, avocado, hemp seed, cilantro pumpkin seed pesto V",
+    "price": 550
+  },
+  {
+    "id": 16,
+    "image": "img/chopped-salad.jpg",
+    "name": " Chopped Salad",
+    "ingredients": "medjool date, dried cranberry, jicama, organic apple, aged white cheddar, farro, marcona almond, champagne vinaigrette VEG",
+    "price": 950
+  },
+  {
+    "id": 17,
+    "image": "img/creamy-tomato-soup.jpg",
+    "name": " Creamy Tomato Soup",
+    "ingredients": "Topped with whipped parmesan and toasted sourdough breadcrumb VEG",
+    "price": 650
+  },
+  {
+    "id": 18,
+    "image": "img/edamame-dumplings.jpg",
+    "name": " Edamame Dumplings",
+    "ingredients": "Dashi, white truffle oil, herbs VEG",
+    "price": 250
+  },
+  {
+    "id": 19,
+    "image": "img/edamole-guacamole.jpg",
+    "name": " Edamole Guacamole",
+    "ingredients": " Avocado, cilantro, lime, Chef Matt’s Magical Dust, house-made baked tortilla chips V GF",
+    "price": 750
+  },
+  {
+    "id": 20,
+    "image": "img/herb-hummus.jpg",
+    "name": " Herb Hummus",
+    "ingredients": "Cucumber, cherry tomato, onion, olive, feta, lemon oregano vinaigrette, pita VEG",
+    "price": 250
+  },
+  {
+    "id": 21,
+    "image": "img/korean-noodle-bowl.jpg",
+    "name": " Korean Noodle Bowl",
+    "ingredients": "sweet potato glass noodle, pickled shiitake, organic spinach, carrot, bean sprout, Chef Matt’s Magical Dust V GF",
+    "price": 250
+  },
+  {
+    "id": 22,
+    "image": "img/quinoa-bowl.jpg",
+    "name": " Quinoa Bowl",
+    "ingredients": "Broccoli, rainbow carrots, bok choy, green bean, snap pea, pickled shiitake, brown rice, avocado, Chef Matt’s Magical Dust V GF",
+    "price": 250
+  },
+  {
+    "id": 23,
+    "image": "img/squash-soup.jpg",
+    "name": " Squash Soup",
+    "ingredients": "Butternut squash, sage V GF",
+    "price": 450
+  },
+  {
+    "id": 24,
+    "image": "img/BlueberryPancakes.jpg",
+    "name": " Blueberry Pancake",
+    "ingredients": "Blueberry compote, greek yogurt, maple syrup",
+    "price": 250
+  }
+]

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="style.css" rel="stylesheet" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Feastfinder</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav-container">
+        <span class="logo">
+          <a href="/index.html">Feastfinder</a>
+        </span>
+        <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+          </ul>
+          <div class="btns">
+            <a class="nav-item" href="/cart.html">
+              <img src="./img/Slice 2.png" width="40px" height="40px" />
+            </a>
+            <span class="cart-notification">0</span> 
+            <a href="orders.html">
+              <button class="order">Order Online</button>
+            </a>
+          </div>
+        </nav>
+        <span class="hamburger-menu material-symbols-outlined">menu</span>
+        <span class="close-menu material-symbols-outlined">close</span>
+      </div>
+    </header>
+    <section class="cart">
+      <div class="cart-header">
+        <h2> My Cart</h2>
+        <a href="/index.html">
+          <span class="close-cart">Close</span>
+        </a>
+      </div>          
+        <div class="cart-item">
+          <!-- <div class="item">
+            <img src="https://via.placeholder.com/50" alt="Item">
+            <span class="close-menu-cart material-symbols-outlined">close</span>
+            <div class="details">
+              <h3>Mac N Cheese</h3>
+              <p class="amount">$549</p>
+            </div>
+            <div class="quantity">
+              <input type="number" name="name" value="1">
+            </div>
+            <p class="sub-total">$556</pc>
+          </div>-->
+        </div> 
+        <div>
+          <div class="total">Total <span id="total-amount">$0</span></div>
+          <button class="checkout">Proceed to Checkout</button>
+        </div>
+        <div class="modal" id="successModal">
+          <div class="modal-content">
+         <i class="fa-solid fa-circle-check fa-2xl" style="color: #FFD43B;"></i>
+         <h2>Order Completed</h2>
+         <p>Your order is on its way. Thank you!</p>
+         
+           <a href="/index.html"><button id="closeModal">Close</button></a>
+         </div>
+       </div>
+    </section>
+</main>
+<footer class="copyright">
+  <div class="social-icons">
+    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+  <p>Copyright © 2023 Feastfinder | All rights reserved</p>
+</footer>
+<script src="nav.js"></script>
+<script src="cart.js"></script>
+</body>
+</html>
